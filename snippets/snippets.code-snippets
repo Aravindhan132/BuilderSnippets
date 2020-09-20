@@ -1,0 +1,195 @@
+{
+    "BG colors": {
+        "prefix": "backgroundColor",
+        "body": [
+            "${1|\"bgPrimary\", \"bgSecondary\"|}"
+        ],
+        "description": "Background Colors"
+    },
+    
+    "Text colors": {
+        "prefix": "textColor",
+        "body": [
+            "${1|\"primaryTextColor\", \"secondaryTextColor\", \"teritaryTextColor\"|}"
+        ],
+        "description": "Text Colors"
+    },
+    
+    "Border colors": {
+        "prefix": "borderColor",
+        "body": [
+            "${1|\"primaryTextColor\", \"secondaryTextColor\", \"teritaryTextColor\", \"bgPrimary\", \"bgSecondary\" |}"
+        ],
+        "description": "Text Colors"
+    },
+    
+    "Text Alignments": {
+        "prefix": "alignment",
+        "body": [
+            "${1|\"left\", \"right\", \"center\" , \"top\" , \"bottom\"|}"
+        ],
+        "description": "Text Alignments"
+    },
+
+    "Text Fonts": {
+        "prefix": "font",
+        "body": [
+            "${1|\"systemRegular\", \"systemSemiBold\", \"systemBold\"|}"
+        ],
+        "description": "Text Fonts"
+    },
+
+    "Text Sizes": {
+        "prefix": "fontsize",
+        "body": [
+            "${1|\"Large\", \"Small\", \"Medium\", \"Average\", \"TooSmall\"|}"
+        ],
+        "description": "Font Sizes"
+    },
+
+    "Position": {
+        "prefix": "position",
+        "body": [
+            "${1|\"TopLeft\", \"TopRight\", \"BottomLeft\", \"BottomRight\", \"TopCenter\", \"LeftCenter\", \"BottomCenter\", \"RightCenter\", \"Center\"|}"
+        ],
+        "description": "Position Constraints"
+    },
+
+    "Padding": {
+        "prefix": "padding",
+        "body": [
+           
+            "{",
+            "\t\"top\":  null,",
+            "\t\"bottom\":  null,",
+            "\t\"left\":  null,",
+            "\t\"right\":  null",
+            "}"
+        ],
+        "description": "Padding"
+    },
+
+    "Size": {
+        "prefix": "size",
+        "body": [
+           
+            "{",
+            "\t\"width\":  null,",
+            "\t\"height\":  null",
+            "}"
+        ],
+        "description": "Padding"
+    },
+
+    "Size Attributes": {
+        "prefix": "sizeattributes",
+        "body": [
+           
+            "\t\"sizeAttributes\":  {",
+                "\t\t\"constraints\":  {",
+                    "\t\t\t\"padding\":  null,",
+                    "\t\t\t\"size\":  null,",
+                    "\t\t\t\"huggingPriority\":  null,",
+                    "\t\t\t\"resistentPriority\":  null",
+                "\t\t},",
+                "\t\t\"spacing\":  null,",
+                "\t\t\"position\":  null",
+            "\t},",
+        ],
+        "description": "size Attributes"
+    },
+
+    "Builder Components": {
+        "prefix": "components",
+        "body": [
+            "${1|\"Label\", \"Button\"|}"
+        ],
+        "description": "Background Colors"
+    },
+
+    "Label Creation": {
+        "prefix": "Label",
+        "body": [
+            "{",
+            "\t\"type\":  \"Label\",",
+            "\t\"key\":  \"${1:labelKey}\",",
+            "\t\"style\":  {",
+            "\t\t\"bgColor\": ${2:null},",
+            "\t\t\"textColor\": ${3:null},",
+            "\t\t\"borderColor\": ${4:null},",
+            "\t\t\"alignment\": ${5:null},",
+            "\t\t\"font\": null,",
+            "\t\t\"roundedCorner\": null,",
+            "\t\t\"size\": null,",
+            "\t\t\"cornerRadius\": null,",
+            "\t\t\"isEditable\": null",
+            "\t}",
+            "}"
+        ],
+        "description": "Label"
+    },
+
+    "Horizantal Stack Creation": {
+        "prefix": "HStack",
+        "body": [
+            "{",
+            "\"type\":  \"HStack\",",
+            "\"key\":  \"${1:hStackKey}\",",
+            "\t\"style\":  {",
+            "\t\t\"bgColor\": ${2:null},",
+            "\t\t\"borderColor\": ${4:null},",
+            "\t\t\"alignment\": ${5:null},",
+            "\t\t\"roundedCorner\": null,",
+            "\t\t\"cornerRadius\": null",
+            "\t},",
+            "\t\"items\":  [",
+            "\t]",
+            "}"
+        ],
+        "description": "Horizantal Stack Component"
+    },
+
+    "Vertical Stack Creation": {
+        "prefix": "VStack",
+        "body": [
+            "{",
+            "\"type\":  \"VStack\",",
+            "\"key\":  \"${1:hStackKey}\",",
+            "\t\"style\":  {",
+            "\t\t\"bgColor\": ${2:null},",
+            "\t\t\"borderColor\": ${4:null},",
+            "\t\t\"alignment\": ${5:null},",
+            "\t\t\"roundedCorner\": null,",
+            "\t\t\"cornerRadius\": null",
+            "\t},",
+            "\t\"items\":  [",
+            "\t]",
+            "}"
+        ],
+        "description": "Vertical Stack Component"
+    },
+
+
+    "Component Creation": {
+        "prefix": "component",
+        "body": [
+            "{",
+            "\t\"type\": ${1|\"Label\",\"TextField\",\"TextView\",\"Icon\",\"ImageView\",\"WebView\",\"gridBlock\",\"listBlock\",\"progressView\",\"loader\" |},",
+            "\t\"key\": $1,",
+            "\t\"style\":  {",
+            "\t\t\"bgColor\": ${2:null},",
+            "\t\t\"textColor\": ${3:null},",
+            "\t\t\"borderColor\": ${4:null},",
+            "\t\t\"alignment\": ${5:null},",
+            "\t\t\"font\": null,",
+            "\t\t\"roundedCorner\": null,",
+            "\t\t\"size\": null,",
+            "\t\t\"cornerRadius\": null,",
+            "\t\t\"isEditable\": null",
+            "\t}",
+            "}"
+        ],
+        "description": "Label"
+    }
+
+}

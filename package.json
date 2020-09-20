@@ -1,0 +1,37 @@
+{
+    "name": "platformbuilder-snippets",
+    "displayName": "Platform Builder Snippets",
+    "description": "Add Code snippets for platform Builder JSON creation ",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "publisher": "Aravindhan",
+	"author": {
+		"name": "Aravindhan Natarajan"
+    },
+    "homepage": "https://github.com/Aravindhan132/BuilderSnippets",
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/Aravindhan132/BuilderSnippets"
+    },
+    "bugs": {
+		"url": "https://github.com/Aravindhan132/BuilderSnippets/issues"
+	},
+    "categories": [
+        "Snippets"
+    ],
+    "keywords": [
+        "Platform Builder",
+        "BuilderJSON",
+        "Platform"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "json",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
